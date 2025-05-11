@@ -1,6 +1,7 @@
 package za.co.rideloop;
 
 import za.co.rideloop.Domain.Car;
+import za.co.rideloop.Domain.Location;
 import za.co.rideloop.Domain.Maintenance;
 
 public class Main {
@@ -35,5 +36,16 @@ public class Main {
             .build();
 
         System.out.println(maintenance);
-}}
+
+        Location location = new Location.Builder()
+                .setLocationID(101)
+                .setStreetName("Oak Street")
+                .setSuburb("Parklands")
+                .setProvince("Western Cape")
+                .setZipCode("7441")
+                .build();
+
+        System.out.println(location);
+    }
+}
 
