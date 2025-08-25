@@ -1,5 +1,11 @@
 package za.co.rideloop.Controller;
 
+/**
+ *
+ * @Author: Ndyebo Qole 210018615
+ * @Student Number: 210018615
+ **/
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
