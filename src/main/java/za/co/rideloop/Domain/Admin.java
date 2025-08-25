@@ -25,6 +25,7 @@ public class Admin {
     private String password;
 
 
+
     protected Admin() {
 
     }
@@ -80,6 +81,12 @@ public class Admin {
             return this;
         }
 
+        public adminBuilder copy(Admin admin){
+            this.adminID = admin.adminID;
+            this.userName = admin.userName;
+            this.password = admin.password;
+            return this;
+        }
 
 
         public Admin build(){

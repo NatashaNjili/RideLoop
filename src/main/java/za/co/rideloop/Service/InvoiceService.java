@@ -24,7 +24,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class InvoiceService {
+public class                                                                                                                                InvoiceService {
 
     @Autowired
     private InvoiceRepository repository;
