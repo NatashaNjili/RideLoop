@@ -20,7 +20,7 @@ public interface InvoiceRepository extends JpaRepository<Invoice, Integer> {
    // Invoice findByPaymentReference(String paymentReference);
   Optional<Invoice> findByPaymentReference(String paymentReference);
 
-  @Override
-  List<Invoice> findAllById(Iterable<Integer> integers);
+//  @Override
+//  List<Invoice> findAllById(Iterable<Integer> integers);
 
 }

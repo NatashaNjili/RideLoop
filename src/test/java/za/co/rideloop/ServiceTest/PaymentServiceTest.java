@@ -76,6 +76,7 @@ class PaymentServiceTest {
         Payment updatedPayment = new Payment.PaymentBuilder()
                 .PaymentBuilderCopy(savedPayment)
                 .setPaymentMethod("Card")
+                .setPaymentStatus("approved")
                 .build();
 
         Payment result = service.update(updatedPayment);
@@ -113,6 +114,12 @@ class PaymentServiceTest {
        //// assertEquals(1, found.size());
         //assertEquals("EFT", found.get(0).getPaymentMethod());
         System.out.println("Found by Payment Status: " + found);
+    }
+    @Test
+    void getAllPayements() {
+        List<Payment> all = service.getAll();
+        assertFalse(all.isEmpty());
+        System.out.println("All Payments: " + all);
     }
 
     @Test
