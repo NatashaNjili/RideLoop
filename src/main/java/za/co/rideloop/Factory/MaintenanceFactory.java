@@ -1,6 +1,8 @@
 package za.co.rideloop.Factory;
 
 import za.co.rideloop.Domain.Maintenance;
+import za.co.rideloop.Util.Helper;
+
 /* MaintananceFactory.java
 
      Mainntanence Factory class
@@ -19,6 +21,30 @@ public class MaintenanceFactory {
     Double costPerMonth,
     String description
     ) {
+
+        if (Helper.isNull(id) || id <= 0) {
+            throw new IllegalArgumentException("Invalid Maintenance ID");
+        }
+        if (Helper.isNullOrEmpty(insuranceCompanyName)) {
+            throw new IllegalArgumentException("Insurance company name cannot be null or empty");
+        }
+        if (Helper.isNullOrEmpty(contactPerson)) {
+            throw new IllegalArgumentException("Contact person cannot be null or empty");
+        }
+        if (Helper.isNullOrEmpty(contactNumber)) {
+            throw new IllegalArgumentException("Contact number cannot be null or empty");
+        }
+        if (Helper.isNullOrEmpty(coverageType)) {
+            throw new IllegalArgumentException("Coverage type cannot be null or empty");
+        }
+        if (Helper.isNull(costPerMonth) || !Helper.isValidAmount(costPerMonth)) {
+            throw new IllegalArgumentException("Monthly cost must be greater than 0");
+        }
+        if (Helper.isNullOrEmpty(description)) {
+            throw new IllegalArgumentException("Description cannot be null or empty");
+        }
+
+
         return new Maintenance.Builder()
             .setId(id)
             .setInsuranceCompanyName(insuranceCompanyName)
