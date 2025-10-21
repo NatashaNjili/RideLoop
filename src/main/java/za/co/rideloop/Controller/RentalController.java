@@ -29,13 +29,6 @@ public class RentalController {
 
     }
 
-    // ===== READ =====
-    @GetMapping("/read/{id}")
-    public Rental read(@PathVariable Integer id) {
-        return service.read(id);
-    }
-
-
 
 
     // ===== GET ALL =====

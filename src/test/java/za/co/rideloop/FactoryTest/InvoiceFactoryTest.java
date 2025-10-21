@@ -8,8 +8,6 @@ package za.co.rideloop.FactoryTest;
  * Group 3 I
  **/
 import org.junit.jupiter.api.Test;
-import za.co.rideloop.Domain.Invoice;
-import za.co.rideloop.Factory.InvoiceFactory;
 
 
 import java.time.LocalDate;

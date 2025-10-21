@@ -1,8 +1,6 @@
 package za.co.rideloop.FactoryTest;
 
 import org.junit.jupiter.api.Test;
-import za.co.rideloop.Domain.FinancialReport;
-import za.co.rideloop.Factory.FinancialReportFactory;
 
 import static org.junit.jupiter.api.Assertions.*;
 

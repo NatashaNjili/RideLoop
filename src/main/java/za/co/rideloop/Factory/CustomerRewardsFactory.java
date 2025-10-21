@@ -2,7 +2,6 @@ package za.co.rideloop.Factory;
 
 import za.co.rideloop.Domain.CustomerProfile;
 import za.co.rideloop.Domain.CustomerRewards;
-import za.co.rideloop.Domain.Payment;
 
 import java.time.LocalDateTime;
 

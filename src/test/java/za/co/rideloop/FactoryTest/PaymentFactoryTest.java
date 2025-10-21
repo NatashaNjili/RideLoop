@@ -8,9 +8,7 @@ package za.co.rideloop.FactoryTest;
  * Group 3 I
  **/
 import org.junit.jupiter.api.Test;
-import za.co.rideloop.Domain.Payment;
 import za.co.rideloop.Domain.Rental;
-import za.co.rideloop.Factory.PaymentFactory;
 
 import java.time.LocalDate;
 
