@@ -3,10 +3,8 @@ package za.co.rideloop.Service;
 import org.springframework.stereotype.Service;
 import za.co.rideloop.Domain.CustomerRewards;
 import za.co.rideloop.Domain.CustomerProfile;
-import za.co.rideloop.Domain.Payment;
 import za.co.rideloop.Repository.CustomerRewardsRepository;
 import za.co.rideloop.Repository.CustomerProfileRepository;
-import za.co.rideloop.Repository.PaymentRepository;
 
 import java.time.LocalDateTime;
 import java.util.Optional;

@@ -1,7 +1,0 @@
-package za.co.rideloop.Repository;
-
-public interface MaintenanceRepository {
-
-
-    
-}
